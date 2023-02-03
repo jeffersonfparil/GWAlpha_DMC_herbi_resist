@@ -8,7 +8,7 @@ process GWALPHA {
         val dir_data
         val dir_gwalpha
     output:
-        val 0
+        path 'GWAlpha_*_out.csv'
     shell:
     '''
     #!/usr/bin/env bash
@@ -17,6 +17,7 @@ process GWALPHA {
     parallel -j !{task.cpus} \
         python !{dir_gwalpha}/GWAlpha.py \
             {} \
+            ML \
         ::: $(ls *.sync)
     
     echo "Output:"

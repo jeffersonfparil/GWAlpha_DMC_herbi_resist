@@ -13,3 +13,8 @@ git clone https://github.com/jeffersonfparil/GWAlpha_DMC_herbi_resist.git
 git clone https://github.com/aflevel/GWAlpha.git
 git clone https://github.com/kristinmlee/dmc.git
 ```
+
+3. Run per module
+```shell
+time nextflow run modules/gwalpha.nf -c config/params.config
+```
