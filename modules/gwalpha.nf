@@ -8,7 +8,7 @@ process GWALPHA {
         val dir_data
         val dir_gwalpha
     output:
-        path 'GWAlpha_*_out.csv'
+        val 0
     shell:
     '''
     #!/usr/bin/env bash
