@@ -3,3 +3,4 @@ test/reads/
 work/
 .nextflow/ 
 .nextflow.log*
+log.txt
