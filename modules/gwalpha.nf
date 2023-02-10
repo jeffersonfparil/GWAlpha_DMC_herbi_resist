@@ -15,7 +15,6 @@ process GWALPHA {
     cd !{dir_data}
     for f in $(ls *.sync)
     do
-        echo ${f%.sync*}_pheno.py >> test.tmp 
         julia !{projectDir}/../scripts/gwalpha.jl \
             ${f} \
             ${f%.sync*}_pheno.py
