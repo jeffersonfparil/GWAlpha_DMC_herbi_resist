@@ -27,5 +27,5 @@ process GWALPHA {
 }
 
 workflow {
-    GWALPHA(params.dir_data, params.dir_gwalpha)
+    GWALPHA(params.dir_data)
 }
