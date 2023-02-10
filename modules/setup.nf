@@ -41,5 +41,5 @@ process INSTALL_JULIA_PACKAGES {
 
 
 workflow {
-    INSTALL_JULIA_PACKAGES(params.dir_reads)
+    INSTALL_JULIA_PACKAGES(params.dir_data)
 }
