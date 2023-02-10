@@ -16,5 +16,6 @@ git clone https://github.com/kristinmlee/dmc.git
 
 3. Run per module
 ```shell
+time nextflow run modules/setup.nf -c config/params.config
 time nextflow run modules/gwalpha.nf -c config/params.config
 ```
