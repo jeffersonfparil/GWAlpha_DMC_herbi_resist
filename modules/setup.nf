@@ -23,8 +23,23 @@
 //     '''
 // }
 
-// workflow {
-//     GENOME_FIX(params.reference_genome) | \
-//     (GENOME_BWA_INDEX & GENOME_SAMTOOLS_INDEX & GENOME_GATK4_INDEX)
-//     JULIA_INSTALL_PACKAGES(params.dir_reads)
-// }
+process INSTALL_JULIA_PACKAGES {
+    label "HIGH_MEM_HIGH_CPU"
+    input:
+        val dir
+    output:
+        val 0
+    shell:
+    '''
+    #!/usr/bin/env bash
+    cd !{dir}
+    echo 'using Pkg; Pkg.add(PackageSpec(url="https://github.com/jeffersonfparil/GWAlpha.jl.git", rev="master"))' > install_julia_packages.jl
+    julia install_julia_packages.jl
+    rm install_julia_packages.jl
+    '''
+}
+
+
+workflow {
+    JULIA_INSTALL_PACKAGES(params.dir_reads)
+}
