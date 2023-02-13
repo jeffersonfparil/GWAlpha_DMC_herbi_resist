@@ -27,7 +27,6 @@ conda install -y -c bioconda nextflow
 conda install -y -c bioconda 'python=2.7'
 conda install -y -c bioconda numpy scipy
 conda install -y -c bioconda r-base
-conda install -y -c bioconda julia
 
 
 ```

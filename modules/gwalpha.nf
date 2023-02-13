@@ -6,6 +6,7 @@ process GWALPHA {
     label "HIGH_MEM_HIGH_CPU"
     input:
         val dir_data
+        val dir_gwalpha
     output:
         val 0
     shell:
@@ -13,19 +14,17 @@ process GWALPHA {
     #!/usr/bin/env bash
     echo 'GWAlpha'
     cd !{dir_data}
-    for f in $(ls *.sync)
-    do
-        julia !{projectDir}/../scripts/gwalpha.jl \
-            ${f} \
-            ${f%.sync*}_pheno.py
-    done
+    parallel -j !{task.cpus} \
+        python !{dir_gwalpha}/GWAlpha.py \
+            {} \
+            ML \
+        ::: $(ls *.sync)
     
     echo "Output:"
-    echo "  (1/2) {sync_name}-GWAlpha-OUTPUT.csv"
-    echo "  (2/2) {sync_name}-GWAlpha-OUTPUT.png"
+    echo "  (1/1) GWAlpha_{sync_name}_out.csv"
     '''
 }
 
 workflow {
-    GWALPHA(params.dir_data)
+    GWALPHA(params.dir_data, params.dir_gwalpha)
 }
