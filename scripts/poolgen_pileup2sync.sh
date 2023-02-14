@@ -10,7 +10,7 @@ time \
     --fname ${f} \
     --output ${f%.pileup*}.sync.tmp \
     --pool-names pool_names.txt \
-    --min-cov 10 \
+    --min-cov 5 \
     --n-threads 32
 tail -n+2 ${f%.pileup*}.sync.tmp > ${f%.pileup*}.sync
 rm ${f%.pileup*}.sync.tmp
