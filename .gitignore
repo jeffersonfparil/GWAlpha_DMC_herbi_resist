@@ -1,5 +1,4 @@
-test/ref/
-test/reads/
+test/
 work/
 .nextflow/ 
 .nextflow.log*
