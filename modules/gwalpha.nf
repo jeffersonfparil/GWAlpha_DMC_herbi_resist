@@ -7,17 +7,19 @@ process GWALPHA {
     input:
         val dir_data
         val dir_gwalpha
+        val maf
     output:
         val 0
     shell:
     '''
     #!/usr/bin/env bash
-    echo 'GWAlpha'
+    echo 'GWAlpha'GWAlpha
     cd !{dir_data}
     parallel -j !{task.cpus} \
         python !{dir_gwalpha}/GWAlpha.py \
             {} \
             ML \
+            -MAF !{maf} \
         ::: $(ls *.sync)
     
     echo "Output:"
@@ -26,5 +28,5 @@ process GWALPHA {
 }
 
 workflow {
-    GWALPHA(params.dir_data, params.dir_gwalpha)
+    GWALPHA(params.dir_data, params.dir_gwalpha, params.maf)
 }

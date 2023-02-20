@@ -1,9 +1,11 @@
 ### Plot GWAlpha output
 args = commandArgs(trailingOnly=TRUE)
-# args = c("test/GWAlpha_Lolium_URANA_GLYPH_out.csv", "test/Lolium_rigidum.gff")
-# args = c("test/GWAlpha_Lolium_ACC031_GLYPH_out.csv", "test/Lolium_rigidum.gff")
+# args = c("test/GWAlpha_Lolium_URANA_GLYPH_out.csv", "test/Lolium_rigidum.gff", "1000")
+# args = c("test/GWAlpha_Lolium_ACC062_GLYPH_out.csv", "test/Lolium_rigidum.gff", "1000")
 fname_input = args[1]
 fname_gff = args[2]
+window_bp = as.numeric(args[3])
+
 
 dat = read.csv(fname_input, TRUE)
 dat = dat[order(dat$X..Chromosome), ]
@@ -21,51 +23,6 @@ dat$PVAL = pnorm(abs(dat$Alpha), mu, sd, lower.tail=FALSE)
 dat$LOD = -log10(dat$PVAL)
 threshold = -log10(0.05/n)
 
-# ### Finding the best distribution to model the distribution of alpha
-# # install.packages("VGAM")
-# library(VGAM)
-# LL_LAPLACE = function(params, x) {
-#     return(sum(-log10(1e-10 + dlaplace(x, location=params[1], scale=params[2]))))
-# }
-# # opt = optim(par=c(0,1), fn=LL_LAPLACE, x=dat$Alpha, method="L-BFGS-B", lower=c(-100, 1e-10), upper=c(1e10, 1e10))
-# opt = optim(par=c(0,1), fn=LL_LAPLACE, x=dat$Alpha)
-# params = opt$par
-
-# dat$PVAL = plaplace(dat$Alpha, location=params[1], scale=params[2])
-# dat$LOD = -log10(dat$PVAL)
-
-# pval_heur = function(x){
-#     # x = dat$Alpha
-#     mu = mean(x)
-#     d = density(x, n=1e6)
-
-#     x_left  = d$x[d$x < mu]
-#     y_left  = d$y[d$x < mu]
-#     x_right = d$x[d$x >= mu]
-#     y_right = d$y[d$x >= mu]
-#     dx = diff(d$x[1:2])
-
-#     v = c(1:length(dx))
-#     pval = c()
-#     for (xi in x) {
-#         # xi = max(x)
-#         if (xi < mu) {
-#             p = sum(y_left[x_left <= xi] * dx)
-#         } else {
-#             p = sum(y_right[x_right >= xi] * dx)
-#         }
-#         pval = c(pval, p)
-#     }
-#     # plot(-log10(pval))
-#     # qqnorm(-log10(pval))
-#     return(pval)
-# }
-# dat$PVAL = pval_heur(dat$Alpha)
-# dat$LOD = -log10(dat$PVAL)
-# threshold = -log10(0.05/n)
-
-
-
 MIN = aggregate(Position ~ X..Chromosome, data=dat, FUN=min)
 MAX = aggregate(Position ~ X..Chromosome, data=dat, FUN=max)
 dat$Scaled_positions = dat$Position
@@ -77,6 +34,7 @@ for (i in 1:m){
 }
 
 
+png(paste0(fname_input, "-Manhattan.png"), width=2000,height=1000)
 
 par(mfrow=c(2,2))
 plot(dat$Alpha)
@@ -111,12 +69,20 @@ idx = dat$LOD >= threshold
 if (sum(idx) > 0) {
     OUT = dat[idx, ]
 
-    window_bp = 1e3
     for (i in 1:nrow(OUT)) {
         # i = 1
         chr = OUT$X..Chromosome[i]
         pos = OUT$Position[i]
         idx = (gff$V1 == chr) & ((gff$V4-window_bp) >= pos) & ((gff$V5-window_bp) <= pos) & ((gff$V4+window_bp) >= pos) & ((gff$V5+window_bp) <= pos)
-        print(sum(idx))
+        if(sum(idx) > 0) {
+            x = OUT$Scaled_position[i]
+            y = OUT$LOD[i]
+            for (j in 1:sum(idx)) {
+                gene_id = unlist(strsplit(gff$V9[idx][j], ";"))
+                gene_id = gene_id[grepl("product", gene_id)]
+                text(x, y, label=gene_id, pos=4)
+            }
+        }
     }
 }
+dev.off()
