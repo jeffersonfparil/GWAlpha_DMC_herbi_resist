@@ -1,10 +1,11 @@
 ### Plot GWAlpha output
 args = commandArgs(trailingOnly=TRUE)
-# args = c("test/GWAlpha_Lolium_URANA_GLYPH_out.csv", "test/Lolium_rigidum.gff", "1000")
-# args = c("test/GWAlpha_Lolium_ACC062_GLYPH_out.csv", "test/Lolium_rigidum.gff", "1000")
+# args = c("test/GWAlpha_Lolium_ACC009_TERBU_out.csv", "test/Lolium_rigidum.gff", "10000", "7")
+# args = c("test/GWAlpha_Lolium_INVER_GLYPH_out.csv", "test/Lolium_rigidum.gff", "10000", "7")
 fname_input = args[1]
 fname_gff = args[2]
 window_bp = as.numeric(args[3])
+n_chr = as.numeric(args[4])
 
 
 dat = read.csv(fname_input, TRUE)
@@ -37,7 +38,8 @@ for (i in 1:m){
 png(paste0(fname_input, "-Manhattan.png"), width=2000,height=1000)
 
 par(mfrow=c(2,2))
-plot(dat$Alpha)
+
+### Distribution of alphas
 h = hist(dat$Alpha)
 d = density(dat$Alpha)
 d$y = ( ((d$y - min(d$y)) / (max(d$y)-min(d$y))) * (max(h$counts)-min(h$counts)) ) + min(h$counts)
@@ -46,43 +48,60 @@ d_norm = data.frame(x=d$x)
 d_norm$y = dnorm(d$x, mu, sd)
 d_norm$y = ( ((d_norm$y - min(d_norm$y)) / (max(d_norm$y)-min(d_norm$y))) * (max(h$counts)-min(h$counts)) ) + min(h$counts)
 lines(d_norm$x, d_norm$y, lty=2, col="red")
+legend("right", legend=paste0(formatC(n, format="d", big.mark=","), " loci"), bty="n")
 
-
-# insert qqplot here
+### QQ plot of LOD
 plot(range(dat$LOD), range(dat$LOD), type="l", col="red", lty=2, xlab="Expected", ylab="Observed")
 points(x=seq(min(dat$LOD), max(dat$LOD), length=n), y=sort(dat$LOD))
 
-
-
-p = m
-p = 7
-plot(c(0.5,p+0.5), c(0,max(dat$LOD)), type="n", xlab="Chromosome", ylab="-log10(p)")
-grid()
-for (i in 1:p) {
-    # i = 1
-    chr = vec_chr[i]
-    idx = dat$X..Chromosome == chr
-    points(dat$Scaled_positions[idx]+(i-0.5), dat$LOD[idx], col=vec_colours[(i%%2)+1])
-}
-abline(h=threshold, col="red", lty=2)
-idx = dat$LOD >= threshold
-if (sum(idx) > 0) {
-    OUT = dat[idx, ]
-
-    for (i in 1:nrow(OUT)) {
+### Manhattan plots
+plot_manhatttan = function(X, G, vec_chr, threshold, xlab="Chromosome") {
+    X$Scaled_positions_in_plot = X$Scaled_positions
+    p = plot(c(0.5,length(vec_chr)+0.5), c(0,max(X$LOD)), type="n", xlab=xlab, ylab="-log10(p)")
+    grid()
+    for (i in 1:length(vec_chr)) {
         # i = 1
-        chr = OUT$X..Chromosome[i]
-        pos = OUT$Position[i]
-        idx = (gff$V1 == chr) & ((gff$V4-window_bp) >= pos) & ((gff$V5-window_bp) <= pos) & ((gff$V4+window_bp) >= pos) & ((gff$V5+window_bp) <= pos)
-        if(sum(idx) > 0) {
-            x = OUT$Scaled_position[i]
-            y = OUT$LOD[i]
-            for (j in 1:sum(idx)) {
-                gene_id = unlist(strsplit(gff$V9[idx][j], ";"))
-                gene_id = gene_id[grepl("product", gene_id)]
-                text(x, y, label=gene_id, pos=4)
+        chr = vec_chr[i]
+        idx = X$X..Chromosome == chr
+        X$Scaled_positions_in_plot[idx] = X$Scaled_positions[idx]+(i-0.5)
+        points(X$Scaled_positions_in_plot[idx], X$LOD[idx], col=vec_colours[(i%%2)+1])
+    }
+    abline(h=threshold, col="red", lty=2)
+    idx = X$LOD >= threshold
+    if (sum(idx) > 0) {
+        OUT = X[idx, ]
+        OUT$Annotation = NA
+        for (i in 1:nrow(OUT)) {
+            # i = 1
+            chr = OUT$X..Chromosome[i]
+            pos = OUT$Position[i]
+            idx = (G$V1 == chr) & ((G$V4-window_bp) <= pos) & ((G$V5+window_bp) >= pos)
+            G_sub = G[idx, ]
+            idx = G_sub$V3 == "CDS"
+            G_sub = G_sub[idx, ]
+            if(nrow(G_sub) > 0) {
+                x = OUT$Scaled_positions_in_plot[i]
+                y = OUT$LOD[i]
+                for (j in 1:nrow(G_sub)) {
+                    # j = 1
+                    gene_id = unlist(strsplit(G$V9[idx][j], ";"))
+                    gene_id = gsub("product=", "", gene_id[grepl("product", gene_id)])
+                    if (length(gene_id)>0) {
+                        label = paste0(gene_id, " (SNP:", pos, "; ANNOT:", G_sub$V4[j], "-", G_sub$V5[j], ")")
+                        text(x, y, label=label, pos=4)
+                        OUT$Annotation[i] = label
+                    }
+                    gene_id=""
+                }
             }
         }
+    } else {
+        OUT = NULL
     }
+    return(list(p=p, o=OUT))
 }
+O1 = plot_manhatttan(X=dat[dat$X..Chromosome %in% vec_chr[1:n_chr], ], G=gff, vec_chr=vec_chr[1:n_chr], threshold=threshold)
+O2 = plot_manhatttan(X=dat[dat$X..Chromosome %in% vec_chr[(n_chr+1):m], ], G=gff, vec_chr=vec_chr[(n_chr+1):m], threshold=threshold, xlab="Scaffold")
 dev.off()
+
+write.table(rbind(O1$o, O2$o), gsub(".csv", "-PEAKS.csv", fname_input), sep=",", row.names=FALSE, quote=TRUE)
