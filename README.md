@@ -18,4 +18,5 @@ git clone https://github.com/kristinmlee/dmc.git
 ```shell
 time nextflow run modules/setup.nf -c config/params.config
 time nextflow run modules/gwalpha.nf -c config/params.config
+time nextflow run modules/peaks.nf -c config/params.config
 ```

@@ -1,7 +1,6 @@
 ### Plot GWAlpha output
 args = commandArgs(trailingOnly=TRUE)
-# args = c("test/GWAlpha_Lolium_ACC009_TERBU_out.csv", "test/Lolium_rigidum.gff", "10000", "7")
-# args = c("test/GWAlpha_Lolium_INVER_GLYPH_out.csv", "test/Lolium_rigidum.gff", "10000", "7")
+# args = c("test/GWAlpha_Lolium_INVER_GLYPH_out2023_02_23-06_20_25_PM.csv", "test/Lolium_rigidum.gff", "10000", "7")
 fname_input = args[1]
 fname_gff = args[2]
 window_bp = as.numeric(args[3])
