@@ -35,7 +35,6 @@ for (i in 1:m){
 
 
 png(paste0(fname_input, "-Manhattan.png"), width=2000,height=1000)
-
 par(mfrow=c(2,2))
 
 ### Distribution of alphas
