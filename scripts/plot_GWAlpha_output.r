@@ -1,6 +1,6 @@
 ### Plot GWAlpha output
 args = commandArgs(trailingOnly=TRUE)
-# args = c("test/GWAlpha_Lolium_INVER_GLYPH_out2023_02_23-06_20_25_PM.csv", "test/Lolium_rigidum.gff", "10000", "7")
+# args = c("test/GWAlpha_Lolium_ACC009_TERBU_out_2023_03_07-03_24_58_PM.csv", "test/Lolium_rigidum.gff", "10000", "7")
 fname_input = args[1]
 fname_gff = args[2]
 window_bp = as.numeric(args[3])
@@ -15,6 +15,9 @@ gff = read.delim(fname_gff, header=FALSE, sep="\t")
 
 n = nrow(dat)
 m = length(vec_chr)
+if (m < n_chr) {
+    n_chr = m
+}
 vec_colours = c("#fc8d59", "#91bfdb")
 
 mu = mean(dat$Alpha)
@@ -77,7 +80,7 @@ plot_manhatttan = function(X, G, vec_chr, threshold, xlab="Chromosome") {
             G_sub = G[idx, ]
             idx = G_sub$V3 == "CDS"
             G_sub = G_sub[idx, ]
-            if(nrow(G_sub) > 0) {
+            if (nrow(G_sub) > 0) {
                 x = OUT$Scaled_positions_in_plot[i]
                 y = OUT$LOD[i]
                 for (j in 1:nrow(G_sub)) {
@@ -99,7 +102,7 @@ plot_manhatttan = function(X, G, vec_chr, threshold, xlab="Chromosome") {
     return(list(p=p, o=OUT))
 }
 O1 = plot_manhatttan(X=dat[dat$X..Chromosome %in% vec_chr[1:n_chr], ], G=gff, vec_chr=vec_chr[1:n_chr], threshold=threshold)
-O2 = plot_manhatttan(X=dat[dat$X..Chromosome %in% vec_chr[(n_chr+1):m], ], G=gff, vec_chr=vec_chr[(n_chr+1):m], threshold=threshold, xlab="Scaffold")
+O2 = plot_manhatttan(X=dat[dat$X..Chromosome %in% vec_chr[min(c(1, n_chr+1)):m], ], G=gff, vec_chr=vec_chr[min(c(1, n_chr+1)):m], threshold=threshold, xlab="Scaffold")
 dev.off()
 
 write.table(rbind(O1$o, O2$o), gsub(".csv", "-PEAKS.csv", fname_input), sep=",", row.names=FALSE, quote=TRUE)

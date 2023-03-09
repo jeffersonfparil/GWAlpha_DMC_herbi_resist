@@ -4,29 +4,33 @@
 
 process GWALPHA {
     label "HIGH_MEM_HIGH_CPU"
+    publishDir params.dir_data, mode: 'symlink', overwrite: true
     input:
-        val dir_data
-        val dir_gwalpha
+        path dir_data
+        path dir_gwalpha
         val maf
     output:
-        val 0
+        path "GWAlpha_*_out_*.csv"
     shell:
     '''
     #!/usr/bin/env bash
-    echo 'GWAlpha'GWAlpha
-    cd !{dir_data}
+    echo 'GWAlpha'
+    for f in $(find !{dir_data}/ -name '*.sync') $(find !{dir_data}/ -name '*_pheno.py')
+    do
+        bname=$(basename $f)
+        ln -s $f $bname
+    done
     parallel -j !{task.cpus} \
-        python !{dir_gwalpha}/GWAlpha.py \
-            {} \
-            ML \
-            -MAF !{maf} \
-        ::: $(ls *.sync)
-    
-    echo "Output:"
-    echo "  (1/1) GWAlpha_{sync_name}_out.csv"
+         python !{dir_gwalpha}/GWAlpha.py \
+             {} \
+             ML \
+             -MAF !{maf} \
+         ::: $(ls *.sync)
     '''
 }
 
-workflow {
-    GWALPHA(params.dir_data, params.dir_gwalpha, params.maf)
-}
+// workflow {
+//     GWALPHA(Channel.fromPath(params.dir_data),
+//             Channel.fromPath(params.dir_gwalpha),
+//             params.maf)
+// }

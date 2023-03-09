@@ -1,0 +1,344 @@
+Mar-07 10:24:33.162 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 16c11ba8-1329-4b06-827d-4653a56f004d
+Mar-07 10:24:33.164 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: loving_lamport
+Mar-07 10:24:33.165 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:24:33.172 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:24:33.187 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:24:33.199 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:24:33.206 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:24:33.222 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:24:33.241 [AWT-EventQueue-0] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-07 10:24:33.318 [Thread-3] DEBUG nextflow.Session - Session start
+Mar-07 10:24:43.977 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: a8d0b805-a3b0-40d6-8077-bbd13fc028a9
+Mar-07 10:24:43.978 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: distracted_swartz
+Mar-07 10:24:43.979 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:24:43.981 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:24:43.982 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:24:43.983 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:24:43.985 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:24:43.987 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:24:44.019 [Thread-5] DEBUG nextflow.Session - Session start
+Mar-07 10:24:44.053 [Thread-5] WARN  nextflow.script.IncludeDef - Anonymous module inclusion is deprecated -- Replace `include './modules/gwalpha.nf'` with `include { MODULE_NAME } from './modules/gwalpha.nf'`
+Mar-07 10:24:48.550 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: e32a8a1c-e217-4dc8-952a-8ac7c0d27daf
+Mar-07 10:24:48.550 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: mad_mirzakhani
+Mar-07 10:24:48.551 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:24:48.552 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:24:48.553 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:24:48.554 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:24:48.556 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:24:48.560 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:24:48.592 [Thread-7] DEBUG nextflow.Session - Session start
+Mar-07 10:24:48.620 [Thread-7] WARN  nextflow.script.IncludeDef - Anonymous module inclusion is deprecated -- Replace `include './modules/gwalpha.nf'` with `include { MODULE_NAME } from './modules/gwalpha.nf'`
+Mar-07 10:25:00.289 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 840ed0b4-282c-40d6-8bcb-6e553e4f0d31
+Mar-07 10:25:00.290 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: soggy_banach
+Mar-07 10:25:00.290 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:25:00.291 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:25:00.292 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:25:00.293 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:25:00.294 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:25:00.296 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:25:00.327 [Thread-9] DEBUG nextflow.Session - Session start
+Mar-07 10:25:00.377 [Thread-9] WARN  nextflow.script.IncludeDef - Anonymous module inclusion is deprecated -- Replace `include './modules/gwalpha.nf'` with `include { MODULE_NAME } from './modules/gwalpha.nf'`
+Mar-07 10:25:31.751 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: e23be714-d3d9-4673-a2b9-b489d673f252
+Mar-07 10:25:31.751 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: stoic_stonebraker
+Mar-07 10:25:31.751 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:25:31.751 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:25:31.752 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:25:31.752 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:25:31.752 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:25:31.761 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:25:31.783 [Thread-11] DEBUG nextflow.Session - Session start
+Mar-07 10:25:49.663 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 70d3d62a-0078-46c6-8b73-410d28be6531
+Mar-07 10:25:49.663 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: big_chandrasekhar
+Mar-07 10:25:49.663 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:25:49.664 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:25:49.665 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:25:49.666 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:25:49.667 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:25:49.669 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:25:49.703 [Thread-13] DEBUG nextflow.Session - Session start
+Mar-07 10:26:10.109 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 7cf2e7e6-cc1e-40f2-8338-7c548728a73d
+Mar-07 10:26:10.109 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: sharp_mayer
+Mar-07 10:26:10.109 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:26:10.111 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:26:10.112 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:26:10.112 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:26:10.113 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:26:10.115 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:26:10.144 [Thread-15] DEBUG nextflow.Session - Session start
+Mar-07 10:26:38.993 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 11a40e13-aff6-48ae-a171-b404dd8399f2
+Mar-07 10:26:38.994 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: naughty_franklin
+Mar-07 10:26:38.994 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:26:38.995 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:26:38.996 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:26:38.997 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:26:38.999 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:26:39.000 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:26:39.030 [Thread-17] DEBUG nextflow.Session - Session start
+Mar-07 10:27:34.882 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 519b90d9-a30c-4c53-8526-dd0e6745f44b
+Mar-07 10:27:34.882 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: ecstatic_dubinsky
+Mar-07 10:27:34.883 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:27:34.883 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:27:34.884 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:27:34.885 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:27:34.886 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:27:34.888 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:27:34.922 [Thread-20] DEBUG nextflow.Session - Session start
+Mar-07 10:27:51.427 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 2460b714-60e1-4519-a923-9ccb4ba67294
+Mar-07 10:27:51.427 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: hopeful_yalow
+Mar-07 10:27:51.427 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:27:51.428 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:27:51.428 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:27:51.428 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:27:51.429 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:27:51.430 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:27:51.458 [Thread-22] DEBUG nextflow.Session - Session start
+Mar-07 10:27:54.151 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 8361be4e-b24b-4243-9c4c-33a72a594f0a
+Mar-07 10:27:54.151 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: happy_boyd
+Mar-07 10:27:54.151 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:27:54.151 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:27:54.151 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:27:54.152 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:27:54.152 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:27:54.162 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:27:54.196 [Thread-24] DEBUG nextflow.Session - Session start
+Mar-07 10:28:28.119 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 273c8ea0-291d-4d35-870b-ebbcc3c0e48d
+Mar-07 10:28:28.120 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: cranky_mestorf
+Mar-07 10:28:28.126 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:28:28.127 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:28:28.128 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:28:28.130 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:28:28.131 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:28:28.132 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:28:28.173 [Thread-26] DEBUG nextflow.Session - Session start
+Mar-07 10:28:36.440 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: b43e0bd4-85d7-4a4c-9a50-5d7562892253
+Mar-07 10:28:36.441 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: chaotic_woese
+Mar-07 10:28:36.441 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:28:36.442 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:28:36.443 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:28:36.443 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:28:36.444 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:28:36.447 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:28:36.483 [Thread-28] DEBUG nextflow.Session - Session start
+Mar-07 10:29:53.797 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: bbd8b9c8-903f-4c31-8948-6ace9fbbde28
+Mar-07 10:29:53.798 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: peaceful_gilbert
+Mar-07 10:29:53.798 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:29:53.800 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:29:53.801 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:29:53.802 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:29:53.803 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:29:53.805 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:29:53.847 [Thread-30] DEBUG nextflow.Session - Session start
+Mar-07 10:33:52.660 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 47739122-8db1-4623-82df-896739301acf
+Mar-07 10:33:52.661 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: adoring_bell
+Mar-07 10:33:52.661 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:33:52.662 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:33:52.663 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:33:52.664 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:33:52.665 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:33:52.666 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:33:52.698 [Thread-32] DEBUG nextflow.Session - Session start
+Mar-07 10:42:19.491 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 08da2e45-6ff0-4eeb-b461-a7c4982d49d3
+Mar-07 10:42:19.493 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: suspicious_spence
+Mar-07 10:42:19.493 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:42:19.513 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:42:19.528 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:42:19.539 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:42:19.546 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:42:19.564 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:42:19.584 [AWT-EventQueue-0] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-07 10:42:19.670 [Thread-3] DEBUG nextflow.Session - Session start
+Mar-07 10:42:20.029 [Thread-3] WARN  nextflow.NextflowMeta$Preview - DSL 2 PREVIEW MODE IS DEPRECATED - USE THE STABLE VERSION INSTEAD -- Read more at https://www.nextflow.io/docs/latest/dsl2.html#dsl2-migration-notes
+Mar-07 10:42:57.390 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 385a6574-c8a8-4690-8bfc-84bb628fc086
+Mar-07 10:42:57.390 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: chaotic_noether
+Mar-07 10:42:57.391 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:42:57.393 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:42:57.394 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:42:57.395 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:42:57.396 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:42:57.397 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:42:57.399 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:42:57.434 [Thread-5] DEBUG nextflow.Session - Session start
+Mar-07 10:43:04.432 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 063b012c-16d7-4699-9a6d-13a59e2e67e0
+Mar-07 10:43:04.433 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: golden_cuvier
+Mar-07 10:43:04.433 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:43:04.434 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:43:04.435 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:43:04.436 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:43:04.436 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:43:04.437 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:43:04.439 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:43:04.462 [Thread-7] DEBUG nextflow.Session - Session start
+Mar-07 10:43:04.485 [Thread-7] DEBUG nextflow.Session - Session await
+Mar-07 10:43:04.485 [Thread-7] DEBUG nextflow.Session - Session await > all processes finished
+Mar-07 10:43:04.485 [Thread-7] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-07 10:43:04.496 [Thread-7] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Mar-07 10:43:04.516 [Thread-7] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-07 10:43:04.516 [Thread-7] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-console@1.0.4'
+Mar-07 10:43:04.517 [Thread-7] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-console
+Mar-07 10:43:11.143 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 4910f455-1cdc-40fb-b6ed-daeb49efa0f0
+Mar-07 10:43:11.144 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: pedantic_mclean
+Mar-07 10:43:11.144 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:43:11.145 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:43:11.146 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:43:11.146 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:43:11.147 [AWT-EventQueue-0] WARN  nextflow.executor.ExecutorFactory - Plugin manager not initialised -- Using built-in executors
+Mar-07 10:43:11.152 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:43:11.162 [AWT-EventQueue-0] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-07 10:43:11.162 [AWT-EventQueue-0] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-07 10:43:11.166 [AWT-EventQueue-0] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-07 10:43:11.168 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:43:11.171 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:43:11.171 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:43:11.196 [Thread-9] DEBUG nextflow.Session - Session start
+Mar-07 10:46:45.072 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 2e39cc3d-926f-44bc-818a-cac6738dd617
+Mar-07 10:46:45.073 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: mighty_fermi
+Mar-07 10:46:45.073 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:46:45.075 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:46:45.076 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:46:45.077 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:46:45.078 [AWT-EventQueue-0] WARN  nextflow.executor.ExecutorFactory - Plugin manager not initialised -- Using built-in executors
+Mar-07 10:46:45.081 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:45.081 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:46:45.084 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:45.085 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:46:45.113 [Thread-11] DEBUG nextflow.Session - Session start
+Mar-07 10:46:54.464 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: b4fa002d-9b55-42b7-8f17-2a7e58642df9
+Mar-07 10:46:54.465 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: shrivelled_hilbert
+Mar-07 10:46:54.465 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:46:54.466 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:46:54.467 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:46:54.467 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:46:54.468 [AWT-EventQueue-0] WARN  nextflow.executor.ExecutorFactory - Plugin manager not initialised -- Using built-in executors
+Mar-07 10:46:54.471 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:54.472 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:46:54.474 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:54.475 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:46:54.510 [Thread-13] DEBUG nextflow.Session - Session start
+Mar-07 10:46:56.320 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 83f06907-f912-4eaa-93e8-73a8ee8e2980
+Mar-07 10:46:56.321 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: stupefied_carlsson
+Mar-07 10:46:56.322 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:46:56.323 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:46:56.324 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:46:56.324 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:46:56.325 [AWT-EventQueue-0] WARN  nextflow.executor.ExecutorFactory - Plugin manager not initialised -- Using built-in executors
+Mar-07 10:46:56.328 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:56.329 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:46:56.330 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:56.331 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:46:56.362 [Thread-15] DEBUG nextflow.Session - Session start
+Mar-07 10:46:57.487 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 38841c85-6198-4b74-a08f-a34ff99a2e80
+Mar-07 10:46:57.487 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: loving_kare
+Mar-07 10:46:57.487 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:46:57.488 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:46:57.489 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:46:57.490 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:46:57.491 [AWT-EventQueue-0] WARN  nextflow.executor.ExecutorFactory - Plugin manager not initialised -- Using built-in executors
+Mar-07 10:46:57.494 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:57.495 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:46:57.497 [AWT-EventQueue-0] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Mar-07 10:46:57.498 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:46:57.533 [Thread-17] DEBUG nextflow.Session - Session start
+Mar-07 10:50:08.422 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/nextflow.config
+Mar-07 10:50:08.424 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/nextflow.config
+Mar-07 10:50:08.447 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-07 10:50:18.425 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 37764007-9b31-4b59-a7bc-9ebfc8a374e2
+Mar-07 10:50:18.426 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: berserk_hoover
+Mar-07 10:50:18.427 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:50:18.446 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:50:18.461 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:50:18.461 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:50:18.468 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:50:18.475 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:50:18.505 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:50:18.512 [AWT-EventQueue-0] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-07 10:50:18.623 [Thread-4] DEBUG nextflow.Session - Session start
+Mar-07 10:50:30.221 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: b2f0146b-e481-4939-8776-3d2e230346a1
+Mar-07 10:50:30.222 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: happy_linnaeus
+Mar-07 10:50:30.223 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:50:30.226 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:50:30.227 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:50:30.227 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:50:30.228 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:50:30.229 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:50:30.239 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:50:30.287 [Thread-6] DEBUG nextflow.Session - Session start
+Mar-07 10:50:43.308 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 5b664a8a-34b9-4246-ae45-372d1571ce89
+Mar-07 10:50:43.309 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: friendly_curran
+Mar-07 10:50:43.309 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:50:43.310 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:50:43.311 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:50:43.312 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:50:43.313 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:50:43.314 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:50:43.324 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:50:43.358 [Thread-8] DEBUG nextflow.Session - Session start
+Mar-07 10:51:03.001 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 075311be-2ce4-4580-85bb-7154a2bc3355
+Mar-07 10:51:03.002 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: astonishing_plateau
+Mar-07 10:51:03.002 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:03.004 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:03.006 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:03.008 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:03.009 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:03.011 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:03.024 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:03.066 [Thread-10] DEBUG nextflow.Session - Session start
+Mar-07 10:51:41.199 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: acfd7725-6d5b-4547-b93b-b48d096e9ce7
+Mar-07 10:51:41.200 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: deadly_lamarck
+Mar-07 10:51:41.200 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:41.201 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:41.202 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:41.203 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:41.203 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:41.204 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:41.213 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:41.243 [Thread-12] DEBUG nextflow.Session - Session start
+Mar-07 10:51:42.500 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 3fa9c023-142c-4b6c-a877-0219eb18201a
+Mar-07 10:51:42.501 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: friendly_heisenberg
+Mar-07 10:51:42.501 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:42.502 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:42.504 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:42.505 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:42.506 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:42.507 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:42.517 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:42.546 [Thread-14] DEBUG nextflow.Session - Session start
+Mar-07 10:51:43.016 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: cfc191ac-d7e2-46fa-af5b-90dde093a421
+Mar-07 10:51:43.016 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: sharp_thompson
+Mar-07 10:51:43.016 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:43.017 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:43.018 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:43.018 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:43.019 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:43.020 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:43.028 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:43.055 [Thread-16] DEBUG nextflow.Session - Session start
+Mar-07 10:51:43.216 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: d1a7af9a-6a37-4645-bc95-95fd49e5b53c
+Mar-07 10:51:43.216 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: determined_wiles
+Mar-07 10:51:43.217 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:43.217 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:43.218 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:43.219 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:43.220 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:43.222 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:43.229 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:43.256 [Thread-18] DEBUG nextflow.Session - Session start
+Mar-07 10:51:43.380 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 8980c207-a09e-4e18-93f8-07cf81924f58
+Mar-07 10:51:43.380 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: stoic_boyd
+Mar-07 10:51:43.381 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:43.381 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:43.382 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:43.383 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:43.385 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:43.386 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:43.396 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:43.422 [Thread-20] DEBUG nextflow.Session - Session start
+Mar-07 10:51:52.019 [AWT-EventQueue-0] DEBUG nextflow.Session - Session UUID: 89dd2c69-fd0b-4402-ae6b-863d0e89604d
+Mar-07 10:51:52.020 [AWT-EventQueue-0] DEBUG nextflow.Session - Run name: scruffy_coulomb
+Mar-07 10:51:52.021 [AWT-EventQueue-0] DEBUG nextflow.Session - Executor pool size: 4
+Mar-07 10:51:52.022 [AWT-EventQueue-0] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-07 10:51:52.023 [AWT-EventQueue-0] DEBUG nextflow.Session - Work-dir: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/work [ext2/ext3]
+Mar-07 10:51:52.024 [AWT-EventQueue-0] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/jeffersonfparil/Documents/GWAlpha_DMC_herbi_resist/bin
+Mar-07 10:51:52.025 [AWT-EventQueue-0] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-07 10:51:52.026 [AWT-EventQueue-0] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-07 10:51:52.034 [AWT-EventQueue-0] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-07 10:51:52.066 [Thread-22] DEBUG nextflow.Session - Session start
